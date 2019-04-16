@@ -1,0 +1,55 @@
+  ok:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("a","b")
+  ok: => a plays next
+  ___
+  ___
+  ___
+  0: score for "a" (as X)
+  0: score for "b" (as O)
+->play("a",5)
+  ok: => b plays next
+  ___
+  _X_
+  ___
+  0: score for "a" (as X)
+  0: score for "b" (as O)
+->new_game("a","#")
+  name must start with A-Z or a-z: => b plays next
+  ___
+  _X_
+  ___
+  0: score for "a" (as X)
+  0: score for "b" (as O)
+->new_game("a","a")
+  names of players must be different: => b plays next
+  ___
+  _X_
+  ___
+  0: score for "a" (as X)
+  0: score for "b" (as O)
+->undo
+  name must start with A-Z or a-z: => b plays next
+  ___
+  _X_
+  ___
+  0: score for "a" (as X)
+  0: score for "b" (as O)
+->undo
+  ok: => b plays next
+  ___
+  _X_
+  ___
+  0: score for "a" (as X)
+  0: score for "b" (as O)
+->undo
+  ok: => a plays next
+  ___
+  ___
+  ___
+  0: score for "a" (as X)
+  0: score for "b" (as O)

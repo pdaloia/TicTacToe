@@ -1,0 +1,69 @@
+  ok:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("Xavier","Ora")
+  ok: => Xavier plays next
+  ___
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Xavier",1)
+  ok: => Ora plays next
+  X__
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Ora",2)
+  ok: => Xavier plays next
+  XO_
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Xavier",9)
+  ok: => Ora plays next
+  XO_
+  ___
+  __X
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->undo
+  ok: => Xavier plays next
+  XO_
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->undo
+  ok: => Ora plays next
+  X__
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->undo
+  ok: => Xavier plays next
+  ___
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->undo
+  ok: => Xavier plays next
+  ___
+  ___
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)
+->play("Xavier",4)
+  ok: => Ora plays next
+  ___
+  X__
+  ___
+  0: score for "Xavier" (as X)
+  0: score for "Ora" (as O)

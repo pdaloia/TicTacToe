@@ -1,0 +1,209 @@
+  ok:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("r","p")
+  ok: => r plays next
+  ___
+  ___
+  ___
+  0: score for "r" (as X)
+  0: score for "p" (as O)
+->play("r",1)
+  ok: => p plays next
+  X__
+  ___
+  ___
+  0: score for "r" (as X)
+  0: score for "p" (as O)
+->play("p",3)
+  ok: => r plays next
+  X_O
+  ___
+  ___
+  0: score for "r" (as X)
+  0: score for "p" (as O)
+->play("r",2)
+  ok: => p plays next
+  XXO
+  ___
+  ___
+  0: score for "r" (as X)
+  0: score for "p" (as O)
+->play("p",6)
+  ok: => r plays next
+  XXO
+  __O
+  ___
+  0: score for "r" (as X)
+  0: score for "p" (as O)
+->play("r",4)
+  ok: => p plays next
+  XXO
+  X_O
+  ___
+  0: score for "r" (as X)
+  0: score for "p" (as O)
+->play("p",9)
+  there is a winner: => play again or start new game
+  XXO
+  X_O
+  __O
+  0: score for "r" (as X)
+  1: score for "p" (as O)
+->undo
+  there is a winner: => play again or start new game
+  XXO
+  X_O
+  __O
+  0: score for "r" (as X)
+  1: score for "p" (as O)
+->undo
+  there is a winner: => play again or start new game
+  XXO
+  X_O
+  __O
+  0: score for "r" (as X)
+  1: score for "p" (as O)
+->redo
+  there is a winner: => play again or start new game
+  XXO
+  X_O
+  __O
+  0: score for "r" (as X)
+  1: score for "p" (as O)
+->play_again
+  ok: => p plays next
+  ___
+  ___
+  ___
+  0: score for "r" (as X)
+  1: score for "p" (as O)
+->play("p",1)
+  ok: => r plays next
+  O__
+  ___
+  ___
+  0: score for "r" (as X)
+  1: score for "p" (as O)
+->play("r",2)
+  ok: => p plays next
+  OX_
+  ___
+  ___
+  0: score for "r" (as X)
+  1: score for "p" (as O)
+->play("p",3)
+  ok: => r plays next
+  OXO
+  ___
+  ___
+  0: score for "r" (as X)
+  1: score for "p" (as O)
+->play("r",4)
+  ok: => p plays next
+  OXO
+  X__
+  ___
+  0: score for "r" (as X)
+  1: score for "p" (as O)
+->play("p",5)
+  ok: => r plays next
+  OXO
+  XO_
+  ___
+  0: score for "r" (as X)
+  1: score for "p" (as O)
+->play("r",6)
+  ok: => p plays next
+  OXO
+  XOX
+  ___
+  0: score for "r" (as X)
+  1: score for "p" (as O)
+->play("p",7)
+  there is a winner: => play again or start new game
+  OXO
+  XOX
+  O__
+  0: score for "r" (as X)
+  2: score for "p" (as O)
+->play("r",8)
+  game is finished: => play again or start new game
+  OXO
+  XOX
+  O__
+  0: score for "r" (as X)
+  2: score for "p" (as O)
+->play("p",9)
+  game is finished: => play again or start new game
+  OXO
+  XOX
+  O__
+  0: score for "r" (as X)
+  2: score for "p" (as O)
+->undo
+  game is finished: => play again or start new game
+  OXO
+  XOX
+  O__
+  0: score for "r" (as X)
+  2: score for "p" (as O)
+->undo
+  game is finished: => play again or start new game
+  OXO
+  XOX
+  O__
+  0: score for "r" (as X)
+  2: score for "p" (as O)
+->undo
+  game is finished: => play again or start new game
+  OXO
+  XOX
+  O__
+  0: score for "r" (as X)
+  2: score for "p" (as O)
+->undo
+  game is finished: => play again or start new game
+  OXO
+  XOX
+  O__
+  0: score for "r" (as X)
+  2: score for "p" (as O)
+->undo
+  game is finished: => play again or start new game
+  OXO
+  XOX
+  O__
+  0: score for "r" (as X)
+  2: score for "p" (as O)
+->undo
+  game is finished: => play again or start new game
+  OXO
+  XOX
+  O__
+  0: score for "r" (as X)
+  2: score for "p" (as O)
+->undo
+  game is finished: => play again or start new game
+  OXO
+  XOX
+  O__
+  0: score for "r" (as X)
+  2: score for "p" (as O)
+->undo
+  game is finished: => play again or start new game
+  OXO
+  XOX
+  O__
+  0: score for "r" (as X)
+  2: score for "p" (as O)
+->undo
+  game is finished: => play again or start new game
+  OXO
+  XOX
+  O__
+  0: score for "r" (as X)
+  2: score for "p" (as O)

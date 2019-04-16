@@ -1,0 +1,160 @@
+  ok:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("Matt","Matt")
+  names of players must be different:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("Matt","world")
+  ok: => Matt plays next
+  ___
+  ___
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("Matt",1)
+  ok: => world plays next
+  X__
+  ___
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("world",2)
+  ok: => Matt plays next
+  XO_
+  ___
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("Matt",5)
+  ok: => world plays next
+  XO_
+  _X_
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play_again
+  finish this game first: => world plays next
+  XO_
+  _X_
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("world",3)
+  ok: => Matt plays next
+  XOO
+  _X_
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->new_game("Matt","Matt")
+  names of players must be different: => Matt plays next
+  XOO
+  _X_
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("Matt",7)
+  ok: => world plays next
+  XOO
+  _X_
+  X__
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("world",4)
+  ok: => Matt plays next
+  XOO
+  OX_
+  X__
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("Matt",9)
+  there is a winner: => play again or start new game
+  XOO
+  OX_
+  X_X
+  1: score for "Matt" (as X)
+  0: score for "world" (as O)
+->undo
+  there is a winner: => play again or start new game
+  XOO
+  OX_
+  X_X
+  1: score for "Matt" (as X)
+  0: score for "world" (as O)
+->undo
+  there is a winner: => play again or start new game
+  XOO
+  OX_
+  X_X
+  1: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play_again
+  ok: => world plays next
+  ___
+  ___
+  ___
+  1: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("world",1)
+  ok: => Matt plays next
+  O__
+  ___
+  ___
+  1: score for "Matt" (as X)
+  0: score for "world" (as O)
+->undo
+  ok: => world plays next
+  ___
+  ___
+  ___
+  1: score for "Matt" (as X)
+  0: score for "world" (as O)
+->redo
+  ok: => Matt plays next
+  O__
+  ___
+  ___
+  1: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("Matt",2)
+  ok: => world plays next
+  OX_
+  ___
+  ___
+  1: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("world",3)
+  ok: => Matt plays next
+  OXO
+  ___
+  ___
+  1: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play_again
+  finish this game first: => Matt plays next
+  OXO
+  ___
+  ___
+  1: score for "Matt" (as X)
+  0: score for "world" (as O)
+->undo
+  ok: => Matt plays next
+  OXO
+  ___
+  ___
+  1: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("world",4)
+  not this player's turn: => Matt plays next
+  OXO
+  ___
+  ___
+  1: score for "Matt" (as X)
+  0: score for "world" (as O)

@@ -1,0 +1,125 @@
+  ok:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("Matt","world")
+  ok: => Matt plays next
+  ___
+  ___
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("Matt",1)
+  ok: => world plays next
+  X__
+  ___
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("world",2)
+  ok: => Matt plays next
+  XO_
+  ___
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("Matt",5)
+  ok: => world plays next
+  XO_
+  _X_
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play_again
+  finish this game first: => world plays next
+  XO_
+  _X_
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("world",3)
+  ok: => Matt plays next
+  XOO
+  _X_
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->new_game("Matt","Matt")
+  names of players must be different: => Matt plays next
+  XOO
+  _X_
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("Matt",7)
+  ok: => world plays next
+  XOO
+  _X_
+  X__
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("world",4)
+  ok: => Matt plays next
+  XOO
+  OX_
+  X__
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->undo
+  ok: => world plays next
+  XOO
+  _X_
+  X__
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->undo
+  names of players must be different: => Matt plays next
+  XOO
+  _X_
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->undo
+  ok: => Matt plays next
+  XOO
+  _X_
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->undo
+  finish this game first: => world plays next
+  XO_
+  _X_
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->play("Matt",5)
+  not this player's turn: => world plays next
+  XO_
+  _X_
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->redo
+  not this player's turn: => world plays next
+  XO_
+  _X_
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->redo
+  not this player's turn: => world plays next
+  XO_
+  _X_
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)
+->redo
+  not this player's turn: => world plays next
+  XO_
+  _X_
+  ___
+  0: score for "Matt" (as X)
+  0: score for "world" (as O)

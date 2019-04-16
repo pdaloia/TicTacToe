@@ -1,0 +1,125 @@
+  ok:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("Phil","Phil")
+  names of players must be different:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("1hil","Phil")
+  name must start with A-Z or a-z:  => start new game
+  ___
+  ___
+  ___
+  0: score for "" (as X)
+  0: score for "" (as O)
+->new_game("Phil","Raj")
+  ok: => Phil plays next
+  ___
+  ___
+  ___
+  0: score for "Phil" (as X)
+  0: score for "Raj" (as O)
+->play("Phil",1)
+  ok: => Raj plays next
+  X__
+  ___
+  ___
+  0: score for "Phil" (as X)
+  0: score for "Raj" (as O)
+->play("Phil",2)
+  not this player's turn: => Raj plays next
+  X__
+  ___
+  ___
+  0: score for "Phil" (as X)
+  0: score for "Raj" (as O)
+->play("Raj",1)
+  button already taken: => Raj plays next
+  X__
+  ___
+  ___
+  0: score for "Phil" (as X)
+  0: score for "Raj" (as O)
+->play("Raj",2)
+  ok: => Phil plays next
+  XO_
+  ___
+  ___
+  0: score for "Phil" (as X)
+  0: score for "Raj" (as O)
+->play("Pil",3)
+  no such player: => Phil plays next
+  XO_
+  ___
+  ___
+  0: score for "Phil" (as X)
+  0: score for "Raj" (as O)
+->play("Phil",3)
+  ok: => Raj plays next
+  XOX
+  ___
+  ___
+  0: score for "Phil" (as X)
+  0: score for "Raj" (as O)
+->play("Raj",4)
+  ok: => Phil plays next
+  XOX
+  O__
+  ___
+  0: score for "Phil" (as X)
+  0: score for "Raj" (as O)
+->play("Phil",6)
+  ok: => Raj plays next
+  XOX
+  O_X
+  ___
+  0: score for "Phil" (as X)
+  0: score for "Raj" (as O)
+->play("Raj",7)
+  ok: => Phil plays next
+  XOX
+  O_X
+  O__
+  0: score for "Phil" (as X)
+  0: score for "Raj" (as O)
+->play("Phil",8)
+  ok: => Raj plays next
+  XOX
+  O_X
+  OX_
+  0: score for "Phil" (as X)
+  0: score for "Raj" (as O)
+->play("Raj",9)
+  ok: => Phil plays next
+  XOX
+  O_X
+  OXO
+  0: score for "Phil" (as X)
+  0: score for "Raj" (as O)
+->play("Phil",5)
+  game ended in a tie: => play again or start new game
+  XOX
+  OXX
+  OXO
+  0: score for "Phil" (as X)
+  0: score for "Raj" (as O)
+->play("Phil",2)
+  game is finished: => play again or start new game
+  XOX
+  OXX
+  OXO
+  0: score for "Phil" (as X)
+  0: score for "Raj" (as O)
+->play("Raj",1)
+  game is finished: => play again or start new game
+  XOX
+  OXX
+  OXO
+  0: score for "Phil" (as X)
+  0: score for "Raj" (as O)
