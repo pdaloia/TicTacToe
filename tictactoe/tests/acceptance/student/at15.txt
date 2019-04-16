@@ -1,0 +1,20 @@
+--normal execution, no errors
+undo
+undo
+new_game("1", "2")
+new_game("4", "3")
+undo
+undo
+play_again
+play_again
+play_again
+play_again
+play("X", 5)
+play_again
+play_again
+play_again
+play_again
+play_again
+play_again
+
+
